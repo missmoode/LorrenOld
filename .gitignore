@@ -4,3 +4,5 @@ node_modules/
 #Build Directories
 build/
 target/
+
+**/.DS_Store
