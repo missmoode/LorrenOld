@@ -2,7 +2,7 @@
   "name": "LorrenCompiler",
   "version": "1.0.0",
   "scripts": {
-    "start": "gulp build",
+    "build": "gulp build",
     "dev": "gulp build && cd build && npm install && npm start"
   },
   "dependencies": {

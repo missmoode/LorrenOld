@@ -1,6 +1,8 @@
 const {src, dest, parallel, series} = require('gulp')
 const babel = require('gulp-babel')
 const del = require('del')
+const {existsSync} = require('fs')
+const {exec} = require('child_process')
 
 function clean(cb) {
   del('./build');
@@ -25,5 +27,6 @@ function assets(cb) {
 
   cb();
 }
+
 
 exports.build = series(clean, parallel(javascript, assets))
